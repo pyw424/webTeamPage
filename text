@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="Main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="Main">
+      <div class="topMenu">
+        <div id="teamName">끝까지 간다</div>
+        <div class="rightMenu">
+          <div class="rightMenuList">팀명 소개</div>
+          <div class="rightMenuList">블로그</div>
+          <div class="rightMenuList">팀문화</div>
+        </div>
+      </div>
+      <table class="teamInt">
+        <tr>
+          <td class="teamIntText" colspan="3">우리 팀을 소개해요</td>
+        </tr>
+        <tr>
+          <td>
+            <table class="KimBox">
+              <tr>
+                <td style="height: 100px" class="name">김소은</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="num">학번:</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="dept">전공:</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="email">이메일:</td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href=""
+                    ><img src="./Img/Kim.png" alt="Kim" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="ParkBox">
+              <tr>
+                <td style="height: 100px" class="name">박예원</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="num">학번: 202203085</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="dept">전공: ICT융합공학부</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="email">
+                  이메일: parkyw0424@naver.com
+                </td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href="https://github.com/pyw424"
+                    ><img src="./Img/Park.png" alt="Park" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="BaeBox">
+              <tr>
+                <td style="height: 100px" class="name">배채은</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="num">학번:</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="dept">전공:</td>
+              </tr>
+              <tr>
+                <td style="height: 30px" class="email">이메일:</td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href=""
+                    ><img src="./Img/Bae.png" alt="Bae" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

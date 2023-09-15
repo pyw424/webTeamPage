@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"끝까지간다" 팀소개 페이지</title>
+    <link href="Main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="Main">
+      <div class="topMenu">
+        <h1 id="teamName"></h1>
+        <div class="rightMenu">
+          <div class="rightMenuList"></div>
+          <div class="rightMenuList"></div>
+          <div class="rightMenuList"></div>
+        </div>
+      </div>
+      <table class="teamInt">
+        <tr>
+          <td class="teamIntText" colspan="3">우리 팀을 소개해요</td>
+        </tr>
+
+        <tr>
+          <td>
+            <table id="grid" class="KimBox">
+              <tr>
+                <td class="name" style="height: 100px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="num" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="dept" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="email" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href=""
+                    ><img alt="Kim" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td>
+            <table id="grid" class="ParkBox">
+              <tr>
+                <td class="name" style="height: 100px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="num" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="dept" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="email" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href="https://github.com/pyw424"
+                    ><img alt="Park" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td>
+            <table id="grid" class="BaeBox">
+              <tr>
+                <td class="name" style="height: 100px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="num" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="dept" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td class="email" style="height: 30px"><span></span></td>
+              </tr>
+              <tr>
+                <td style="height: 0">
+                  <a style="height: 100%" href=""
+                    ><img alt="Bae" class="Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      document.querySelector("#teamName").innerHTML = "끝까지 간다";
+
+      const rightMenuList = ["팀명소개", "블로그", "팀문화"];
+
+      // 팀원 정보 배열
+      const teamMembers = [
+        {
+          name: "김소은",
+          num: "학번:",
+          dept: "전공:",
+          email: "이메일:",
+          imgSrc: "./Img/Kim.png",
+        },
+        {
+          name: "박예원",
+          num: "학번: 202203085",
+          dept: "전공: ICT융합공학부",
+          email: "이메일: parkyw0424@naver.com",
+          imgSrc: "./Img/Park.png",
+          github: "https://github.com/pyw424",
+        },
+        {
+          name: "배채은",
+          num: "학번:",
+          dept: "전공:",
+          email: "이메일:",
+          imgSrc: "./Img/Bae.png",
+        },
+      ];
+
+      // 테이블 셀에 데이터 채우기
+      const gridRows = document.querySelectorAll("#grid ");
+      const menuList = document.querySelectorAll(".rightMenuList");
+
+      rightMenuList.forEach((item, index) => {
+        const list = menuList[index];
+        list.textContent = item;
+      });
+
+      teamMembers.forEach((member, index) => {
+        const row = gridRows[index];
+        const link = row.querySelector("a");
+        const img = row.querySelector("img");
+        const span = row.querySelectorAll("span");
+
+        link.href = member.github;
+        img.src = member.imgSrc;
+        span[0].textContent = member.name;
+        span[1].textContent = member.num;
+        span[2].textContent = member.dept;
+        span[3].textContent = member.email;
+      });
+    </script>
+  </body>
+</html>
